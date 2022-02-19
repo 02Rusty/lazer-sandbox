@@ -23,18 +23,18 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components.Settings
                 },
                 new SettingsCheckbox
                 {
-                    LabelText = "Show particles",
+                    LabelText = "Show Triangles",
                     Current = rulesetConfig.GetBindable<bool>(SandboxRulesetSetting.ShowParticles)
                 },
                 new SettingsEnumDropdown<ParticlesDirection>
                 {
-                    LabelText = "Particles direction",
+                    LabelText = "Triangles direction",
                     Current = rulesetConfig.GetBindable<ParticlesDirection>(SandboxRulesetSetting.ParticlesDirection)
                 },
-                new ColourPickerDropdown("Particles colour", SandboxRulesetSetting.ParticlesColour),
+                new ColourPickerDropdown("Triangles colour", SandboxRulesetSetting.ParticlesColour),
                 new SettingsSlider<int>
                 {
-                    LabelText = "Particle count",
+                    LabelText = "Triangle count",
                     Current = rulesetConfig.GetBindable<int>(SandboxRulesetSetting.ParticleCount),
                     KeyboardStep = 1
                 },

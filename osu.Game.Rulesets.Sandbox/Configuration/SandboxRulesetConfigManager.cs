@@ -27,7 +27,7 @@ namespace osu.Game.Rulesets.Sandbox.Configuration
             SetDefault(SandboxRulesetSetting.VisualizerLayout, VisualizerLayout.TypeA);
             SetDefault(SandboxRulesetSetting.ShowSettingsTip, true);
             SetDefault(SandboxRulesetSetting.ParticlesColour, "#ffffff");
-            SetDefault(SandboxRulesetSetting.ParticlesDirection, ParticlesDirection.Random);
+            SetDefault(SandboxRulesetSetting.ParticlesDirection, ParticlesDirection.Down);
 
             // TypeA settings
             SetDefault(SandboxRulesetSetting.Radius, 350, 200, 500);

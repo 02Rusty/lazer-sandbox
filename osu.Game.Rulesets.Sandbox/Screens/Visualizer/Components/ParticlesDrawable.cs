@@ -18,7 +18,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components
     {
         private const float min_depth = 1f;
         private const float max_depth = 1000f;
-        private const float particle_max_size = 4;
+        private const float particle_max_size = 128;
         private const float particle_min_size = 0.5f;
         private const float depth_speed_multiplier = 0.05f;
         private const float side_speed_multiplier = 0.0005f;
@@ -333,7 +333,7 @@ namespace osu.Game.Rulesets.Sandbox.Screens.Visualizer.Components
                 }
                 else
                 {
-                    ratio = Math.Abs(inBoundsPosition.Y) / 0.5f;
+                    ratio = Math.Abs(inBoundsPosition.Y) / 0.10f;
                     y = inBoundsPosition.Y > 0 ? 0.5f : -0.5f;
                     x = inBoundsPosition.X / ratio;
                 }
